@@ -4,28 +4,16 @@ import banyanRoots from "@/assets/banyan-roots.jpg";
 import banyanCanopy from "@/assets/banyan-canopy.jpg";
 import banyanTrunk from "@/assets/banyan-trunk.jpg";
 
-// Local images to use instead of external URLs
-export const treeImages = {
-  hero: banyanHero,
-  roots: banyanRoots,
-  canopy: banyanCanopy,
-  trunk: banyanTrunk,
-};
-
 export const banyanTreeData: TreeData = {
   id: 1,
+  slug: "banyan",
   name: "Banyan Tree",
   scientificName: "Ficus benghalensis",
   family: "Moraceae",
   localNames: ["Vad", "Bargad"],
   nationalStatus: "National Tree of India",
   description: "The Banyan tree is a massive evergreen fig tree native to the Indian subcontinent. It is known for its enormous canopy and aerial prop roots that grow downward from branches and form additional trunks. Over time, a single banyan tree can spread across acres, appearing like a forest. It symbolizes longevity, wisdom, shelter, and spiritual significance in Indian culture.",
-  images: [
-    banyanHero,
-    banyanRoots,
-    banyanCanopy,
-    banyanTrunk,
-  ],
+  images: [banyanHero, banyanRoots, banyanCanopy, banyanTrunk],
   treeType: "Evergreen",
   height: "20–30 meters",
   canopySpread: "Up to 200 meters",
@@ -102,3 +90,14 @@ export const banyanTreeData: TreeData = {
     "One of the longest-living tree species in the world"
   ]
 };
+
+// Tree registry - add more trees here
+export const treeRegistry: Record<string, TreeData> = {
+  banyan: banyanTreeData,
+};
+
+// Get all available trees for listing
+export const getAllTrees = (): TreeData[] => Object.values(treeRegistry);
+
+// Get tree by slug
+export const getTreeBySlug = (slug: string): TreeData | undefined => treeRegistry[slug];

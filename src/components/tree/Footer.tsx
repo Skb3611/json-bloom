@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TreeData } from "@/types/tree";
 import { TreePine, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface FooterProps {
   data: TreeData;
@@ -17,9 +18,10 @@ export const Footer = ({ data }: FooterProps) => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div className="inline-flex items-center gap-2 text-primary mb-4">
+          <Link to="/" className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mb-4">
             <TreePine className="w-6 h-6" />
-          </div>
+            <span className="font-serif font-semibold">Nature Explorer</span>
+          </Link>
           
           <h3 className="text-2xl font-serif text-primary mb-2">
             {data.name}
