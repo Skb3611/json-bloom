@@ -25,13 +25,14 @@ export interface Distribution {
 
 export interface TreeData {
   id: number;
+  slug: string; // URL-friendly identifier
   name: string;
   scientificName: string;
   family: string;
   localNames: string[];
-  nationalStatus: string;
+  nationalStatus?: string; // Optional - only for national trees
   description: string;
-  images: string[];
+  images: string[]; // Array of image paths/URLs (first one is hero)
   treeType: string;
   height: string;
   canopySpread: string;
