@@ -3,6 +3,40 @@ import banyanHero from "@/assets/banyan-hero.jpg";
 import banyanRoots from "@/assets/banyan-roots.jpg";
 import banyanCanopy from "@/assets/banyan-canopy.jpg";
 import banyanTrunk from "@/assets/banyan-trunk.jpg";
+import Peepalhero from "@/assets/Peepalhero.png";
+import peepalfruits from "@/assets/peepaltree.png";
+import peepaltree from "@/assets/peepalroots.png";
+import peepalroots from "@/assets/peepalfruits.png";
+import mangoHero from "@/assets/mangohero.png";
+import mangoFruits from "@/assets/mangofruit.png";
+import mangoTree from "@/assets/mangotree.png";
+import mangotrunck from "@/assets/mangotrunck.png";
+import gulmoharHero from "@/assets/gulmoharhero.png";
+import gulmoharLeaves from "@/assets/gulmoharleaves.png";
+import gulmoharTree from "@/assets/gulmohartree.png";
+import gulmoharTrunk from "@/assets/gulmohartrunck.png";
+import Bealhero from "@/assets/baelhero.png";
+import baelfruits from "@/assets/baelfruits.png";
+import baeltree from "@/assets/bealtree.png";
+import baeltrunck from "@/assets/baeltrunck.png";
+import tamarindHero from "@/assets/tamarindhero.png";
+import tamarind from "@/assets/tamarind.png"
+import tamarindTree from "@/assets/tamarindtree.png";
+import tamarindroot from "@/assets/tamarindroot.png";
+import raintreehero from "@/assets/raintreehero.png";
+import raintreeleaves from "@/assets/raintreeleaves.png";
+import raintree from "@/assets/raintree.png";
+import raintreetrunk from "@/assets/raintreetrunck.png";
+import arjunhero from "@/assets/arjuntreehero.png";
+import arjunroot from "@/assets/arjunroot.png";
+import arjuntree from "@/assets/arjuntree (1).png";
+import arjunfruit from "@/assets/arunfruit.png";
+import coconuthero from "@/assets/coconuttreehero.png";
+import coconuttree from "@/assets/coconuttree.png";
+import coconut from "@/assets/coconut.png";
+import coconuttrunk from "@/assets/coconuttrunk.png";
+// ...existing code...
+
 
 export const banyanTreeData: TreeData = {
   id: 1,
@@ -96,7 +130,7 @@ export const peepulTreeData: TreeData = {
   nationalStatus: "Sacred tree of India",
   description:
     "The Peepal is one of the most sacred trees in Indian culture, especially in Hindu and Buddhist traditions. Known for its distinctive heart-shaped leaves that flutter in the slightest breeze, it's revered for its spiritual significance and often planted near temples.",
-  images: [],
+  images: [Peepalhero, peepalfruits, peepaltree , peepalroots],
   treeType: "Deciduous",
   height: "15–20 meters",
   canopySpread: "Up to 25 meters",
@@ -169,7 +203,7 @@ export const mangoTreeData: TreeData = {
   nationalStatus: "National fruit tree of India",
   description:
     "The Mango tree is one of India's most valuable and beloved fruit trees. Offering abundant shade with its large spreading canopy and delicious, nutritious fruits, it holds both economic and cultural significance across Indian communities.",
-  images: [],
+  images: [mangoHero, mangoFruits, mangoTree, mangotrunck],
   treeType: "Evergreen",
   height: "10–45 meters (depending on variety)",
   canopySpread: "Up to 40 meters",
@@ -249,7 +283,7 @@ export const gulmohárTreeData: TreeData = {
   nationalStatus: "Optional",
   description:
     "The Gulmohar is renowned for its stunning red-orange flowers that create a fiery canopy in summer. This fast-growing ornamental tree with its wide, umbrella-shaped crown provides excellent shade while adorning landscapes with vibrant blooms.",
-  images: [],
+  images: [gulmoharHero, gulmoharLeaves, gulmoharTree, gulmoharTrunk],
   treeType: "Deciduous",
   height: "10–15 meters",
   canopySpread: "Up to 20 meters",
@@ -329,7 +363,7 @@ export const baelTreeData: TreeData = {
   nationalStatus: "Optional",
   description:
     "The Bael tree is deeply sacred in Hindu tradition, especially associated with Lord Shiva. It produces hard, green fruits with sweet, aromatic pulp and plays an important role in both spiritual practices and traditional medicine.",
-  images: [],
+  images: [Bealhero, baelfruits, baeltree, baeltrunck],
   treeType: "Semi-deciduous",
   height: "5–10 meters",
   canopySpread: "Up to 12 meters",
@@ -409,7 +443,7 @@ export const tamarindTreeData: TreeData = {
   nationalStatus: "Optional",
   description:
     "The Tamarind is a large, long-lived tree producing distinctive elongated seedpods filled with sour, tangy pulp. Used extensively in Indian cooking, traditional medicine, and beverages, it's deeply embedded in culinary traditions.",
-  images: [],
+  images: [tamarindHero, tamarind, tamarindTree, tamarindroot],
   treeType: "Deciduous",
   height: "15–25 meters",
   canopySpread: "Up to 25 meters",
@@ -501,7 +535,7 @@ export const rainTreeData: TreeData = {
   nationalStatus: "Optional",
   description:
     "The Rain Tree is a massive, fast-growing ornamental and shade tree with a distinctive umbrella or mushroom-shaped canopy. Named for its tendency to 'weep', this tree provides excellent shade and is planted widely for its architectural form.",
-  images: [],
+  images: [raintreehero, raintreeleaves, raintree, raintreetrunk],
   treeType: "Deciduous to Semi-evergreen",
   height: "15–25 meters",
   canopySpread: "Up to 30 meters",
@@ -578,7 +612,7 @@ export const arjunTreeData: TreeData = {
   nationalStatus: "Optional",
   description:
     "The Arjun tree is a deciduous giant with significant medicinal properties, particularly valued in Ayurvedic medicine for heart health. Commonly found along water bodies, it provides excellent erosion control and timber.",
-  images: [],
+  images: [arjunhero, arjunroot, arjuntree, arjunfruit],
   treeType: "Deciduous",
   height: "20–30 meters",
   canopySpread: "Up to 20 meters",
@@ -662,7 +696,7 @@ export const coconutTreeData: TreeData = {
   nationalStatus: "Optional",
   description:
     "The Coconut tree is one of the most economically important and multipurpose trees, deeply integrated into village life and homestead gardens. Every part provides food, beverages, fiber, and construction materials.",
-  images: [],
+  images: [coconuthero, coconuttree, coconut, coconuttrunk],
   treeType: "Evergreen",
   height: "15–25 meters",
   canopySpread: "10–15 meters",
@@ -747,12 +781,12 @@ export const coconutTreeData: TreeData = {
 // Tree registry - add more trees here
 export const treeRegistry: Record<string, TreeData> = {
   banyan: banyanTreeData,
-  peepul: peepulTreeData,
+  peepal: peepulTreeData,
   mango: mangoTreeData,
   gulmohar: gulmohárTreeData,
   bael: baelTreeData,
   tamarind: tamarindTreeData,
-  rainTree: rainTreeData,
+  "rain-tree": rainTreeData,
   arjun: arjunTreeData,
   coconut: coconutTreeData,
 };
